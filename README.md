@@ -23,3 +23,15 @@ El enfoque de este proyecto es simular una tienda en linea de productos (camisas
 4. Cafe Pagina
 
 En este pagina se volvio a fortalezer los conocimientos anteriormente aplicados, aquí se ofrece informacion y cursos de una tienda bloguera de café
+
+5. Festival Música
+
+Proyecto web para un festival de música.
+Incluye estilos con SCSS, automatización con Node.js + Gulp, y organización de assets en carpetas (src/ y build/).
+
+Tecnologías utilizadas
+- HTML5
+- SCSS (compilado a CSS)
+- JavaScript (ES6)
+- Node.js
+- Gulp (automatización de tareas: compilación de SCSS, copia de JS, imágenes y videos)
