@@ -1,0 +1,12 @@
+# Dependencias
+node_modules/
+
+# Archivos generados
+build/
+
+# Logs
+*.log
+
+# Configuración local
+.env
+.vscode/
