@@ -39,7 +39,11 @@
     <section class="sobre-festival">
 
         <div class="imagen">
-            <img src="src/img/imagen_dj.jpg" alt="Sobre Festival">
+            <picture>
+                <source srcset="build/img/imagendj.avif" type="image/avif">
+                <source srcset="build/img/imagendj.webp" type="image/webp">
+                <img loading="lazy" src="build/img/imagendj.jpg" alt="Sobre Festival">
+            </picture>
         </div>  
 
         <div class="contenido-festival">
