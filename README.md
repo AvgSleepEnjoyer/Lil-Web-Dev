@@ -20,16 +20,17 @@ Su propósito fue practicar la estructura básica de páginas web y aplicar esti
 ## 📂 Proyectos
 Aquí se encuentran los proyectos más completos, donde se integran tecnologías adicionales:
 
-1. **Bienes Raíces – Primer PHP**  
+1. **Bienes Raíces – Primer PHP**
+  Incompleto: https://diego-muriullo.web1337.net/nosotros.php
    Proyecto que incluye una base de datos con 3 tablas relacionadas.  
    Se conectó la DB a la página con PHP, implementando opciones de **crear, actualizar y borrar propiedades**.  
    Además, cuenta con un **login verificador de usuario admin** para acceder a esas funciones.
 
-2. **Café Página**  
+3. **Café Página**  
    Sitio web para una tienda bloguera de café, con información y cursos.  
    Se reforzaron conocimientos previos y se incorporó JavaScript para interactividad.
 
-3. **Festival Música**  
+4. **Festival Música**  
    Proyecto web para un festival de música.  
    Incluye organización de assets en carpetas (`src/` y `build/`), automatización con Node.js + Gulp, y estilos con SCSS.
 
