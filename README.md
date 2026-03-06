@@ -27,13 +27,13 @@ Aquí se encuentran los proyectos más completos, donde se integran tecnologías
    Se conectó la DB a la página con PHP, implementando opciones de **crear, actualizar y borrar propiedades**.  
    Además, cuenta con un **login verificador de usuario admin** para acceder a esas funciones.
 
-3. **Café Página**
+3. **Café Página**  
    https://tienda-de-cafe-curso.netlify.app/
    
    Sitio web para una tienda bloguera de café, con información y cursos.  
    Se reforzaron conocimientos previos y se incorporó JavaScript para interactividad.
 
-5. **Festival Música**
+5. **Festival Música**  
    https://courageous-quokka-7eb9e8.netlify.app/
    
    Proyecto web para un festival de música.  
