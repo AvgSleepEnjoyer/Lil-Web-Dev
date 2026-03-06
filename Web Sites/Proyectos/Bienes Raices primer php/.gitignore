@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+
+# Carpeta de compilación
+build/
+
+# Configuración sensible
+includes/config/database.php
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+.env
+
+vendor/

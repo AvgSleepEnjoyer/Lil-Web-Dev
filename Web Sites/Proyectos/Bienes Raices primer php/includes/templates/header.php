@@ -1,10 +1,8 @@
 <?php 
-
-    if(!isset($_SERVER))
+    if(! isset($_SESSION))
         session_start();
 
     $auth = $_SESSION["login"] ?? false;
-
 
 ?>
 
