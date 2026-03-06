@@ -31,7 +31,7 @@ Aquí se encuentran los proyectos más completos, donde se integran tecnologías
    https://tienda-de-cafe-curso.netlify.app/
    
    Sitio web para una tienda bloguera de café, con información y cursos.  
-   Se reforzaron conocimientos previos y se incorporó JavaScript para interactividad.
+   Se reforzaron conocimientos previos.
 
 5. **Festival Música**  
    https://courageous-quokka-7eb9e8.netlify.app/
