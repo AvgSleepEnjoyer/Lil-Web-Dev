@@ -5,33 +5,36 @@ En este curso se usaron diferentes estrategias, tecnologias y estilos para refor
 -> Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL (Udemy)
 Por: Juan Pablo De la torre Valdez
 
+# 📂 Websites
 
-# Proyectos
+## 📂 Prácticas (HTML y CSS)
+Esta carpeta contiene ejercicios iniciales de aprendizaje:
+- Primer HTML  
+- Primera Página Web – Diego’s site  
+- Tienda Front-End  
 
-1. Primer HTML
+Su propósito fue practicar la estructura básica de páginas web y aplicar estilos con HTML y CSS.
 
-Este codigo fue la primera experiencia usando HTML y un poco de CSS para conocer el entorno de trabajo.
+---
 
-2. Primera Pagina web - Diego's site 
+## 📂 Proyectos
+Aquí se encuentran los proyectos más completos, donde se integran tecnologías adicionales:
 
-Este codigo se uso para aprender las diferentes partes en las que se puede dividir una pagina web y contiene codigo CSS para darle estilo, su proposito es presentar las diferentes certificaciones del autor al igual que los proyectos web posteriores a este.
+1. **Bienes Raíces – Primer PHP**  
+   Proyecto que incluye una base de datos con 3 tablas relacionadas.  
+   Se conectó la DB a la página con PHP, implementando opciones de **crear, actualizar y borrar propiedades**.  
+   Además, cuenta con un **login verificador de usuario admin** para acceder a esas funciones.
 
-3. Tienda front-end
+2. **Café Página**  
+   Sitio web para una tienda bloguera de café, con información y cursos.  
+   Se reforzaron conocimientos previos y se incorporó JavaScript para interactividad.
 
-El enfoque de este proyecto es simular una tienda en linea de productos (camisas con diseño) con intencion de crear enlaces diferentes para cada camisa, conteniendo seleccion de tallas y cantidad.
+3. **Festival Música**  
+   Proyecto web para un festival de música.  
+   Incluye organización de assets en carpetas (`src/` y `build/`), automatización con Node.js + Gulp, y estilos con SCSS.
 
-4. Cafe Pagina
+---
 
-En este pagina se volvio a fortalezer los conocimientos anteriormente aplicados, aquí se ofrece informacion y cursos de una tienda bloguera de café
-
-5. Festival Música
-
-Proyecto web para un festival de música.
-Incluye estilos con SCSS, automatización con Node.js + Gulp, y organización de assets en carpetas (src/ y build/).
-
-Tecnologías utilizadas
-- HTML5
-- SCSS (compilado a CSS)
-- JavaScript (ES6)
-- Node.js
-- Gulp (automatización de tareas: compilación de SCSS, copia de JS, imágenes y videos)
+## 🛠️ Tecnologías utilizadas
+- **Prácticas:** HTML5, CSS3  
+- **Proyectos:** HTML5, CSS3, JavaScript, PHP, MySQL, SCSS, Node.js, Gulp
