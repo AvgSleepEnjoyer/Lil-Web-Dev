@@ -20,8 +20,9 @@ Su propósito fue practicar la estructura básica de páginas web y aplicar esti
 ## 📂 Proyectos
 Aquí se encuentran los proyectos más completos, donde se integran tecnologías adicionales:
 
-1. **Bienes Raíces – Primer PHP**
+1. **Bienes Raíces – Primer PHP**  
   Incompleto: https://diego-muriullo.web1337.net/nosotros.php
+
    Proyecto que incluye una base de datos con 3 tablas relacionadas.  
    Se conectó la DB a la página con PHP, implementando opciones de **crear, actualizar y borrar propiedades**.  
    Además, cuenta con un **login verificador de usuario admin** para acceder a esas funciones.
