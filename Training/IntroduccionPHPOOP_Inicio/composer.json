@@ -1,0 +1,13 @@
+{
+    "name": "diego/introduccion-phpoop_inicio",
+    "authors": [
+        {
+            "name": "Aprendiendo Namespaces y Autoload"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./clases"
+        }
+    }
+}

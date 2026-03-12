@@ -1,0 +1,27 @@
+# Archivos de Composer
+/vendor/
+/composer.lock
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Configuración de IDEs
+.idea/
+.vscode/
+*.swp
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs y cachés
+*.log
+/cache/
+/tmp/
+
+# Archivos de pruebas
+/phpunit.xml
+/phpunit.xml.dist
+coverage/
