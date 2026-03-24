@@ -26,8 +26,13 @@ Aquí se encuentran los proyectos más completos, donde se integran tecnologías
    Proyecto que incluye una base de datos con 3 tablas relacionadas.  
    Se conectó la DB a la página con PHP, implementando opciones de **crear, actualizar y borrar propiedades**.  
    Además, cuenta con un **login verificador de usuario admin** para acceder a esas funciones.
+   
+2. **Bienes Raíces – Segundo PHP**  
+   Version actualizada de Bienes Raices ahora con implementación de Active Record que cambia la estructura ahora Orientado a Objetos para un mantenimiento y futuras implementaciones más sencillas y estructuradas.
+   Además, cuenta con creación y modificación de nuevos vendedores en un panel de control de Administradores.
+   Validaciones de entrada de datos e inyecciones SQL, pero no cuenta con eliminado de datos perfecto todavía.  
 
-3. **Café Página**  
+4. **Café Página**  
    https://tienda-de-cafe-curso.netlify.app/
    
    Sitio web para una tienda bloguera de café, con información y cursos.  
