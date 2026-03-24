@@ -1,6 +1,6 @@
 <?php  
-    // Conexion con la DB
-    require __DIR__ .  "/includes/config/database.php";
+
+    require "includes/app.php";
     $db = conectarDB();
 
     // Autenticar el usuario
@@ -64,8 +64,6 @@
         }
     }
 
-    // Inluye el header
-    require "includes/funciones.php";
 
     incluirTemplate("header");
     ?>
