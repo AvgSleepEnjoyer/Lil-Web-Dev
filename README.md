@@ -48,4 +48,4 @@ Aquí se encuentran los proyectos más completos, donde se integran tecnologías
 
 ## 🛠️ Tecnologías utilizadas
 - **Prácticas:** HTML5, CSS3  
-- **Proyectos:** HTML5, CSS3, JavaScript, PHP, MySQL, SCSS, Node.js, Gulp
+- **Proyectos:** HTML5, CSS3, JavaScript, PHP, Composer, MySQL, SCSS, Node.js, Gulp
