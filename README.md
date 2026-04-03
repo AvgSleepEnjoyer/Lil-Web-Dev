@@ -30,7 +30,14 @@ Aquí se encuentran los proyectos más completos, donde se integran tecnologías
 2. **Bienes Raíces – Segundo PHP**  
    Version actualizada de Bienes Raices ahora con implementación de Active Record que cambia la estructura ahora Orientado a Objetos para un mantenimiento y futuras implementaciones más sencillas y estructuradas.
    Además, cuenta con creación y modificación de nuevos vendedores en un panel de control de Administradores.
-   Validaciones de entrada de datos e inyecciones SQL, pero no cuenta con eliminado de datos perfecto todavía.  
+   Validaciones de entrada de datos e inyecciones SQL, pero no cuenta con eliminado de datos perfecto todavía.
+   
+3. **Bienes Raíces – MVC (PHP)**  
+   Proyecto migrado a un **patrón MVC** para separar responsabilidades entre **Modelos, Vistas y Controladores**.  
+   - **Modelos**: encapsulan la lógica de acceso a datos.  
+   - **Controladores**: gestionan la interacción entre vistas y modelos.  
+   - **Vistas**: presentan la información al usuario.  
+   - **Login y panel admin**: con validaciones y seguridad mejorada.  
 
 4. **Café Página**  
    https://tienda-de-cafe-curso.netlify.app/
