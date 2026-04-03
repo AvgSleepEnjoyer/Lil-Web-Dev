@@ -1,0 +1,18 @@
+# Dependencias
+node_modules/
+
+# Carpeta de compilación
+build/
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+.env
+
+vendor/
+
+public/build

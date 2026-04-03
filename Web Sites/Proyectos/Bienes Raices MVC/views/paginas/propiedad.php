@@ -1,23 +1,4 @@
-<?php  
-    require "includes/app.php";
-
-    use App\Propiedad;
-
-    $id = $_GET["id"];
-    $id = filter_var($id, FILTER_VALIDATE_INT);
-
-    if(!$id)
-        header("Location: /");
-
-    $propiedad = Propiedad::find($id);
-
-
-
-
-    incluirTemplate("header");
-    ?>
-
-    <main class="contenedor seccion contenido-centrado">
+<main class="contenedor seccion contenido-centrado">
         <h1><?php echo $propiedad->titulo; ?></h1>
         
         <img src="/imagenes/<?php echo $propiedad->imagen; ?>" alt="imagen de propiedad" loading="lazy">
@@ -43,8 +24,3 @@
                 <p><?php echo $propiedad->descripcion; ?></p>
         </div>
     </main>
-
-    <?php 
-        incluirTemplate("footer");
-    ?>
-
