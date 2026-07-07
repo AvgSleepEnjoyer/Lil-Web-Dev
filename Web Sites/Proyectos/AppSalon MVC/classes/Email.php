@@ -34,25 +34,27 @@ class Email{
         $mail->Password = $_ENV['MAIL_PASSWORD'];
 
         $mail->setFrom('cuentas@appsalon.com');
-         $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
-         $mail->Subject = 'Confirma tu Cuenta';
+        $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
+        $mail->Subject = 'Confirma tu Cuenta';
 
-         // Set HTML
-         $mail->isHTML(TRUE);
-         $mail->CharSet = 'UTF-8';
+        // Set HTML
+        $mail->isHTML(TRUE);
+        $mail->CharSet = 'UTF-8';
 
-         $contenido = '<html>';
-         $contenido .= "<p><strong>Hola " . $this->email .  "</strong> Has Creado tu cuenta en App Salón, solo debes confirmarla presionando el siguiente enlace</p>";
-         $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
-         $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
-         $contenido .= '</html>';
-         $mail->Body = $contenido;
+        $contenido = '<html>';
+        $contenido .= "<p><strong>Hola " . $this->email .  "</strong> Has Creado tu cuenta en App Salón, solo debes confirmarla presionando el siguiente enlace</p>";
+        $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/confirmar-cuenta?token=" . $this->token . "'>Confirmar Cuenta</a>";        
+        $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
+        $contenido .= '</html>';
+        $mail->Body = $contenido;
 
-         //Enviar el mail
-         $mail->send();
+        //Enviar el mail
+        $mail->send();
     }
 
     public function enviarInstrucciones() {
+
+    
 
         // Crear el objeto de email
         $mail = new PHPMailer();
@@ -77,6 +79,8 @@ class Email{
          $contenido .= "<p>Si tu no solicitaste este cambio, puedes ignorar el mensaje</p>";
          $contenido .= '</html>';
          $mail->Body = $contenido;
+
+
 
          //Enviar el mail
          $mail->send();
