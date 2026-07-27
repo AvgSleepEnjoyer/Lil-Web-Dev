@@ -3,6 +3,7 @@ const pasoInicial = 1;
 const pasoFinal = 3;
 
 const cita = {
+    id: "",
     nombre: '',
     fecha: '',
     hora: '',
@@ -23,6 +24,7 @@ function iniciarApp() {
     consultarAPI(); // Consulta la API en el backend de PHP
 
     nombreCliente();
+    idCliente();
 
     seleccionarFecha(); // Añade la fecha de la cita en el objeto
     seleccionarHora(); // Añade la hora de la cita en el objeto
@@ -173,8 +175,10 @@ function seleccionarServicio(servicio) {
 
 function nombreCliente(){
     cita.nombre = document.querySelector("#nombre").value
+}
 
-
+function idCliente(){
+    cita.id = document.querySelector("#id").value
 }
 
 function seleccionarFecha() {
@@ -246,7 +250,7 @@ function mostrarResumen() {
         resumen.removeChild(resumen.firstChild);
     }
 
-    console.log(cita);
+    // console.log(cita);
 
     if(Object.values(cita).includes("") || cita.servicios.length === 0 ) {
         mostrarAlerta('Faltan datos de Servicios, Fecha u Hora', 'error', '.contenido-resumen', false);
@@ -293,7 +297,7 @@ function mostrarResumen() {
     const fechaUTC = new Date ( Date.UTC(year, mes, dia))
     const opciones = {weekday: "long", year: "numeric", month: "long", day: "numeric"}
     const fechaFormateada = fechaUTC.toLocaleDateString("es-MX", opciones);
-    console.log(fechaFormateada);
+    // console.log(fechaFormateada);
 
     const fechaCita = document.createElement("P")
     fechaCita.innerHTML = `<span>Fecha: </span>${fechaFormateada}`;
@@ -321,18 +325,48 @@ function mostrarResumen() {
 }
 
 async function reservarCita(){
+
+    const {id, fecha, hora, servicios} = cita;
     
+    const idServicios = servicios.map(servicio => servicio.id);
+    
+
     const datos = new FormData();
-    datos.append("nombre", "Diego")
+    datos.append("usuarioId", id);
+    datos.append("fecha", fecha);
+    datos.append("hora", hora);
+    datos.append("servicios", idServicios);
     
-    // Petición hacia la api
-    const url = "http://127.0.0.1/api/citas"
 
-    const respuesta = await fetch(url, {
-        method: "POST"
-    });
+    try {
+        // Petición hacia la api
+        const url = "http://localhost:3000/api/citas"
 
-    
+        const respuesta = await fetch(url, {
+            method: "POST", 
+            body: datos
+        });
+
+        const resultado = await respuesta.json();
+        console.log(resultado);
+
+        if (resultado.resultado) {
+            Swal.fire({
+            icon: "success",
+            title: "Cita Creada",
+            text: "Tu cita fue creada correctamente",
+            button: "OK"
+            }).then( () =>{
+                window.location.reload();
+            } );
+        }
+    } catch (error) {
+        Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Hubo un error al guardar la cita"
+        });
+    }
     
     //console.log([...datos]);
 }
