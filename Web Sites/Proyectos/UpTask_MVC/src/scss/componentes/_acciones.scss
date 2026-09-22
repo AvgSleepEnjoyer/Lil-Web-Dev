@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use "sass:color";
+
+.acciones{
+    margin-top: 5rem;
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+}
+    
+    a{
+        display: block;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: v.$negro;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}
