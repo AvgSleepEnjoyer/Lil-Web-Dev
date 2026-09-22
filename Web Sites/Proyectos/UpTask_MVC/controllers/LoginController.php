@@ -47,23 +47,31 @@ class LoginController{
         ]);
     }
     
-    public static function reestablecer() {
-        echo "reestablecer";
-        
+    public static function reestablecer(Router $router) {
+               
         
         if($_SERVER["REQUEST_METHOD"] === "POST"){
             
             }
+
+        $router->render("auth/reestablecer", [
+            "titulo" => "Reestablecer Password"
+        ]);
     }
             
             
-    public static function mensaje() {
-        echo "mensaje";
+    public static function mensaje(Router $router) {
+
+        $router->render("auth/mensaje", [
+            "titulo" => "Cuenta Creada Exitosamente"
+        ]);
     }
 
 
-    public static function confirmar() {
-        echo "confirmar";
+    public static function confirmar(Router $router) {
+        $router->render("auth/confirmar", [
+            "titulo" => "Confirmar Cuenta"
+        ]);
     }
 
 
