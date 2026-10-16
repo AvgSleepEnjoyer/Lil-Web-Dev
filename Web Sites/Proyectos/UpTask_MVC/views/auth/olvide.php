@@ -5,6 +5,9 @@
     <div class="contenedor-sm">
         <p class="descripcion-pagina">Recupera tu password de UpTask</p>
 
+        <?php @include_once __DIR__ . "/../templates/alertas.php"; ?>
+
+
         <form method="POST" action="/olvide" class="formulario">
 
             
