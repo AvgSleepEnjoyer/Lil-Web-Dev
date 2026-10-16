@@ -9,14 +9,45 @@ use MVC\Router;
 class LoginController{
 
     public static function login(Router $router) {
+
+        $alertas = [];
         
         if($_SERVER["REQUEST_METHOD"] === "POST"){
+            $usuario = new Usuario($_POST);
             
-            }
+            $alertas = $usuario->validarLogin();
 
+            if (empty($alertas)) {
+                // Verificar si el usuario existe en el sistema
+                $usuario = Usuario::where("email", $usuario->email);
+                if (!$usuario || !$usuario->confirmado) {
+                    Usuario::setAlerta("error", "El usuario no existe o no está confirmado");
+                } else {
+                    // Si El Usuario Existe, Se Revisa Si Tiene La Contrraseña Correcta
+                    if (password_verify($_POST["password"], $usuario->password)) {
+                        // Iniciar la Sesion del Usuario
+                        session_start();
+                        $_SESSION["id"] = $usuario->id;
+                        $_SESSION["nombre"] = $usuario->nombre;
+                        $_SESSION["email"] = $usuario->email;
+                        $_SESSION["login"] = true;
+                        
+                        // Redireccionar a la pagina de proyectos
+                        header("Location: /dashboard");
+                    } else {
+                        Usuario::setAlerta("error", "Password Incorrecto");
+                    }
+
+                }
+            } 
+
+        }
+        
+        $alertas = Usuario::getAlertas();
 
         $router->render("auth/login", [
-            "titulo" => "Iniciar Sesión"
+            "titulo" => "Iniciar Sesión",
+            "alertas" => $alertas
         ]);
     }
 
