@@ -21,7 +21,7 @@
             transition-property: background-color;
             transition-duration: 300ms;
 
-            &:hover{
+            &:hover, &.activo{
                 background-color: color.adjust($color: v.$indigo, $lightness: -20%);
                 border-radius: .5rem;
             }
