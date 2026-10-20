@@ -16,6 +16,7 @@ Su propósito fue practicar la estructura básica de páginas web y aplicar esti
 
 ## 📂 Proyectos
 Aquí se encuentran los proyectos más completos, donde se integran tecnologías adicionales:
+Todavía dos proyectos pendientes.
 
 ---
 
