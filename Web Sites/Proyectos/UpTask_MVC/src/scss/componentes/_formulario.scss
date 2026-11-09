@@ -15,10 +15,11 @@
         flex: 0 0 10rem;
     }
 
-    input{
+    input[type="submit"]{
         flex: 1;
         padding: 1rem;
         border: none;
         background-color: color.adjust(v.$gris, $lightness: 40%);
     }
+    
 }
