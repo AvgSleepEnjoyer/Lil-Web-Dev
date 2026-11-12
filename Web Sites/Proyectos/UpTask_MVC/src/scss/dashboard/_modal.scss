@@ -20,6 +20,7 @@
         transition-duration: 300ms;
         opacity: 0;
         border-radius: 1rem;
+        
 
         legend{
             font-size: 2rem;
@@ -29,17 +30,28 @@
             display: block;
         }
 
-        @include m.telefono{
+        input[type="text"]{
+            border: 1px solid v.$gris;
+            border-radius: .5rem
+        }
+
+        .submit-nueva-tarea{
+            @include m.boton(v.$indigo, v.$blanco);
+            margin-bottom: 2rem;
+        }
+        
+        @include m.tablet{
             .opciones{
                 display: flex;
                 justify-content: space-between;
                 gap: 40%
             }
+            .submit-nueva-tarea{
+                @include m.boton(v.$indigo, v.$blanco);
+                margin: 0
+            }
         }
 
-        .submit-nueva-tarea{
-            @include m.boton(v.$indigo, v.$blanco);
-        }
 
         .cerrar-modal{
             @include m.boton(v.$naranja, v.$blanco);
